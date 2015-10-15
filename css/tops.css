@@ -11,13 +11,11 @@
 
     Add margins.
 */
-.u-mb {
-    margin-bottom: 0.5em !important;
-}
-.u-mt {
-    margin-top: 0.5em !important;
-}
-.u-mv {
+.u-mb   { margin-bottom: 0.5em !important; }
+.u-mb\+ { margin-bottom: 2em !important; }
+.u-mt   { margin-top: 0.5em !important; }
+.u-mt\+ { margin-top: 2em !important; }
+.u-mv   {
     margin-top: 0.5em !important;
     margin-bottom: 0.5em !important;
 }
