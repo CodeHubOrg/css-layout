@@ -1,26 +1,40 @@
 .grid {
     display: grid;
-    grid-template-columns: 30% 50% 20%;
-    grid-template-rows: auto;
+    grid-template-columns: 30% 1fr 20%;
+    grid-template-rows: repeat(auto, auto);
+    column-gap: 1em;
+    row-gap: 1em;
 }
 /* variations */
 .grid--gutters {
-    grid-template-columns: 29% 1% 50% 1% 19%;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-template-columns: 30% 0.5em 1fr 0.5em 20%;
+    grid-row: 2 / 3;
 }
 .grid--gutters .grid__item:nth-child(1) {
-    grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column: 1 / 2;
 }
 .grid--gutters .grid__item:nth-child(2) {
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column: 3 / 4;
 }
 .grid--gutters .grid__item:nth-child(3) {
-    grid-column-start: 5;
-    grid-column-end: 6;
+    grid-column: 5 / 6;
 }
-/*.grid--gutter .grid__item {
-    padding: 20px;
-}*/
+
+/*
+    component
+*/
+.grid--product {
+    grid-template-columns: 3.333% 0.5em 1fr 0.5em 33.333%;
+}
+.grid--product .grid__item:nth-child(3n+1) {
+    grid-column: 1 / 2;
+    background: red;
+}
+.grid--product .grid__item:nth-child(1n+1) {
+    grid-column: 3 / 4;
+    background: blue;
+}
+.grid--product .grid__item:nth-child(2n+1) {
+    grid-column: 5 / 6;
+    background: orange;
+}

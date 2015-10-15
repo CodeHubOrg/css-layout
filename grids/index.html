@@ -24,10 +24,15 @@
 
             <p>site for explaining concepts <a href="http://gridbyexample.com/what/">gridbyexample.com</a>.</p>
 
+            <p>Talk about the <a href="https://rachelandrew.co.uk/archives/2015/06/19/css-grid-layout-solving-the-gutter-problem/">gutter problem</a>.</p>
+
             <h3>Flush</h3>
             <div class="holy-grail">
                 <header>header</header>
                 <div class="grid">
+                    <nav class="grid__item">nav</nav>
+                    <article class="grid__item">article</article>
+                    <aside class="grid__item">aside</aside>
                     <nav class="grid__item">nav</nav>
                     <article class="grid__item">article</article>
                     <aside class="grid__item">aside</aside>
@@ -46,6 +51,34 @@
                 <footer>footer</footer>
             </div><!-- .holy-grail -->
 
+            <h3>Product grid</h3>
+            <div class="grid grid--gutters grid--product">
+                <div class="product grid__item u-1/3">
+                    <h3>Acme widget</h3>
+                    <p>Beatifully crafted widget.</p>
+                    <p>Equalised heights :)</p>
+                </div>
+                <div class="product grid__item u-1/3">
+                    <h3>Acme widget</h3>
+                    <p>Beatifully crafted widget.</p>
+                </div>
+                <div class="product grid__item u-1/3">
+                    <h3>Acme widget</h3>
+                    <p>Beatifully crafted widget.</p>
+                </div>
+                <div class="product grid__item u-1/3">
+                    <h3>Acme widget</h3>
+                    <p>Beatifully crafted widget.</p>
+                </div>
+                <div class="product grid__item u-1/3">
+                    <h3>Acme widget</h3>
+                    <p>Beatifully crafted widget.</p>
+                </div>
+                <div class="product grid__item u-1/3">
+                    <h3>Acme widget</h3>
+                    <p>Beatifully crafted widget.</p>
+                </div>
+            </div><!-- .grid -->
         </main>
 
     </body>

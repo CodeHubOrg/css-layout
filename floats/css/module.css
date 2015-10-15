@@ -18,3 +18,10 @@
 .grid--gutters .grid__item {
     padding-left: 0.5em;
 }
+
+/*
+    component specific class
+*/
+.product-grid .grid__item:nth-child(3n+1) {
+    clear: left;
+}

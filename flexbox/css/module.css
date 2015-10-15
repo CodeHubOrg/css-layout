@@ -1,14 +1,22 @@
 .grid {
     display: flex;
 }
-.grid__item {
-    /*margin: 0 0.5em;*/
-}
+/* variations */
+/*
+    1. Allow grid to cope with multiple rows
+    2. Equalises the height by making the children expand to the height of their parent.
+    3. make sure itesm fill width of parent
+*/
 .grid--gutters {
-    margin: 0 0 0 -0.5em;
+    margin-left: -0.5em;
+    flex-flow: wrap; /* [1] */
 }
 .grid--gutters .grid__item {
-    margin: 0 0 0 0.5em;
+    padding-left: 0.5em;
+    display: flex; /* [2] */
+}
+.grid--gutters .grid__item > * {
+    flex-grow: 1; /* [3] */
 }
 
 /*
