@@ -5,10 +5,10 @@
     /*margin: 0 0.5em;*/
 }
 .grid--gutters {
-    margin: 0 -0.5em;
+    margin: 0 0 0 -0.5em;
 }
 .grid--gutters .grid__item {
-    margin: 0 0.5em;
+    margin: 0 0 0 0.5em;
 }
 
 /*
