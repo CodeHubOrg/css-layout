@@ -1,0 +1,10 @@
+.grid {
+    display: grid;
+    grid-template-columns: 30% 2% 46% 2% 20%;
+    /*grid-template-rows: auto 10px auto;*/
+}
+.grid--gutters {
+}
+/*.grid--gutter .grid__item {
+    padding: 20px;
+}*/

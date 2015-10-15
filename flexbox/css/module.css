@@ -1,0 +1,20 @@
+.grid {
+    display: flex;
+}
+.grid__item {
+    /*margin: 0 0.5em;*/
+}
+.grid--gutters {
+    margin: 0 -0.5em;
+}
+.grid--gutters .grid__item {
+    margin: 0 0.5em;
+}
+
+/*
+    changing order
+*/
+/*.aside-1 { order: 1; }
+.main    { order: 2; }
+.aside-2 { order: 3; }
+.footer  { order: 4; }*/

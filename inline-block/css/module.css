@@ -1,0 +1,24 @@
+/*
+    1. Cause columns to stack side-by-side.
+    2. Align columns to the tops of each other.
+    3. Full-width unless told to behave otherwise.
+    4. Required to combine fluid widths and fixed gutters.
+    5. Space columns apart.
+*/
+.grid {
+    list-style: none;
+    margin:  0;
+    padding: 0;
+}
+.grid__item {
+    display: inline-block; /* [1] */
+    vertical-align: top; /* [2] */
+    width: 100%; /* [3] */
+    box-sizing: border-box; /* [4] */
+}
+.grid--gutters {
+    margin-left: -0.5em;
+}
+.grid--gutters .grid__item {
+    padding-left: 0.5em; /* [5] */
+}
