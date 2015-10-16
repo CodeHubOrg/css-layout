@@ -16,66 +16,88 @@
 
         <main class="u-constrict">
             <h1>CSS Layout</h1>
-            <a href="../index.html">Back to menu</a>
 
-            <h2>Grids</h2>
+            <div class="back-to">
+                <a href="../index.html">Back to menu</a>
+            </div>
 
-            <p>To enable CSS Grids Layout in chrome go to 'chrome://flags/' and click enable on 'Enable experimental Web Platform features'.</p>
+            <section>
+                <h2>Grids</h2>
 
-            <p>site for explaining concepts <a href="http://gridbyexample.com/what/">gridbyexample.com</a>.</p>
+                <p>To enable CSS Grids Layout in chrome go to 'chrome://flags/' and click enable on 'Enable experimental Web Platform features'.</p>
 
-            <p>Talk about the <a href="https://rachelandrew.co.uk/archives/2015/06/19/css-grid-layout-solving-the-gutter-problem/">gutter problem</a>.</p>
+                <p>site for explaining concepts <a href="http://gridbyexample.com/what/">gridbyexample.com</a>.</p>
 
-            <h3>Flush</h3>
-            <div class="holy-grail">
-                <header>header</header>
-                <div class="grid grid--page">
-                    <nav class="grid__item">nav</nav>
-                    <article class="grid__item">article</article>
-                    <aside class="grid__item">aside</aside>
-                </div>
-                <footer>footer</footer>
-            </div><!-- .holy-grail -->
+                <p>Talk about the <a href="https://rachelandrew.co.uk/archives/2015/06/19/css-grid-layout-solving-the-gutter-problem/">gutter problem</a>.</p>
+            </section>
 
-            <h3>Gutters</h3>
-            <div class="holy-grail">
-                <header>header</header>
-                <div class="grid grid--page grid--page-gutters u-mv">
-                    <nav class="grid__item">nav</nav>
-                    <article class="grid__item">article</article>
-                    <aside class="grid__item">aside</aside>
-                </div>
-                <footer>footer</footer>
-            </div><!-- .holy-grail -->
+            <section>
+                <h3>Holy grail layout - flush</h3>
+                <div class="holy-grail">
+                    <header>header</header>
+                    <div class="grid grid--page">
+                        <nav class="grid__item">nav</nav>
+                        <article class="grid__item">article</article>
+                        <aside class="grid__item">aside</aside>
+                    </div>
+                    <footer>footer</footer>
+                </div><!-- .holy-grail -->
+            </section>
 
-            <h3>Product grid</h3>
-            <div class="grid grid--product">
-                <div class="product grid__item">
-                    <h3>Acme widget</h3>
-                    <p>Beatifully crafted widget.</p>
-                    <p>Equalised heights :)</p>
-                </div>
-                <div class="product grid__item">
-                    <h3>Acme widget</h3>
-                    <p>Beatifully crafted widget.</p>
-                </div>
-                <div class="product grid__item">
-                    <h3>Acme widget</h3>
-                    <p>Beatifully crafted widget.</p>
-                </div>
-                <div class="product grid__item">
-                    <h3>Acme widget</h3>
-                    <p>Beatifully crafted widget.</p>
-                </div>
-                <div class="product grid__item">
-                    <h3>Acme widget</h3>
-                    <p>Beatifully crafted widget.</p>
-                </div>
-                <div class="product grid__item">
-                    <h3>Acme widget</h3>
-                    <p>Beatifully crafted widget.</p>
-                </div>
-            </div><!-- .grid -->
+            <section>
+                <h3>Holy grail layout - with gutters</h3>
+                <div class="holy-grail">
+                    <header>header</header>
+                    <div class="grid grid--page grid--page-gutters u-mv">
+                        <nav class="grid__item">nav</nav>
+                        <article class="grid__item">article</article>
+                        <aside class="grid__item">aside</aside>
+                    </div>
+                    <footer>footer</footer>
+                </div><!-- .holy-grail -->
+            </section>
+
+            <section>
+                <h3>Product grid</h3>
+                <div class="grid grid--product">
+                    <div class="product grid__item">
+                        <h3>CSS Pocket Reference</h3>
+                        <p>Know your margins from your paddings.</p>
+                        <p>Equal heights :)</p>
+                        <img src="../images/css-book.jpg" alt="CSS Pocket Reference" />
+                    </div>
+                    <div class="product grid__item">
+                        <h3>meow vol iii</h3>
+                        <p>Volume 3, now meow's what I call literature</p>
+                        <img src="../images/meow-book.jpg" alt="meow vol 3" />
+                    </div>
+                    <div class="product grid__item">
+                        <h3>meow vol iii</h3>
+                        <p>Volume 3, now meow's what I call literature</p>
+                        <img src="../images/meow-book.jpg" alt="meow vol 3" />
+                    </div>
+                    <div class="product grid__item">
+                        <h3>CSS Pocket Reference</h3>
+                        <p>Know your margins from your paddings.</p>
+                        <img src="../images/css-book.jpg" alt="CSS Pocket Reference" />
+                    </div>
+                    <div class="product grid__item">
+                        <h3>meow vol iii</h3>
+                        <p>Volume 3, now meow's what I call literature</p>
+                        <img src="../images/meow-book.jpg" alt="meow vol 3" />
+                    </div>
+                    <div class="product grid__item">
+                        <h3>CSS Pocket Reference</h3>
+                        <p>Know your margins from your paddings.</p>
+                        <img src="../images/css-book.jpg" alt="CSS Pocket Reference" />
+                    </div>
+                </div><!-- .grid -->
+            </section>
+
+            <section>
+                <h3>Product grid - responsive</h3>
+            </section>
+
         </main>
 
     </body>
