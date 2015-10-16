@@ -13,6 +13,7 @@
 body {
     font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 1.25em;
+    padding-top: 1em;
 }
 h1, h2, h3, h4 { margin-top: 0; }
 h1 {
