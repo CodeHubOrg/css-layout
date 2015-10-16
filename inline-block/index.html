@@ -16,105 +16,198 @@
 
         <main class="u-constrict">
             <h1>CSS Layout</h1>
-            <a href="../index.html">Back to menu</a>
 
-            <h2>Inline block</h2>
+            <div class="back-to">
+                <a href="../index.html">Back to menu</a>
+            </div>
 
-            <p><a href="https://css-tricks.com/fighting-the-space-between-inline-block-elements/">fighting inline-block space</a></p>
+            <section>
+                <h2>Inline block</h2>
 
-            <h3>Flush</h3>
-            <div class="holy-grail">
-                <header>header</header>
-                <div class="grid">
-                    <div class="grid__item u-3/10">
-                        <nav>nav</nav>
-                    </div><!--
-                    --><div class="grid__item u-1/2">
-                        <article>article</article>
-                    </div><!--
-                    --><div class="grid__item u-1/5">
-                        <aside>aside</aside>
+                <p><a href="https://css-tricks.com/fighting-the-space-between-inline-block-elements/">fighting inline-block space</a></p>
+            </section>
+
+            <section>
+                <h3>Holy grail layout - flush</h3>
+                <div class="holy-grail">
+                    <header>header</header>
+                    <div class="grid">
+                        <div class="grid__item u-3/10">
+                            <nav>nav</nav>
+                        </div><!--
+                        --><div class="grid__item u-1/2">
+                            <article>article</article>
+                        </div><!--
+                        --><div class="grid__item u-1/5">
+                            <aside>aside</aside>
+                        </div>
                     </div>
+                    <footer>footer</footer>
+                </div><!-- .holy-grail -->
+            </section>
+
+            <section>
+                <h3>Holy grail layout - with gutters</h3>
+                <div class="holy-grail">
+                    <header>header</header>
+                    <div class="grid grid--gutters u-mv">
+                        <div class="grid__item u-3/10">
+                            <nav>nav</nav>
+                        </div><!--
+                        --><div class="grid__item u-1/2">
+                            <article>article</article>
+                        </div><!--
+                        --><div class="grid__item u-1/5">
+                            <aside>aside</aside>
+                        </div>
+                    </div>
+                    <footer>footer</footer>
+                </div><!-- .holy-grail -->
+            </section>
+
+            <section>
+                <h3>Product grid</h3>
+                <div class="grid grid--gutters">
+                    <div class="grid__item u-1/3">
+                        <div class="product">
+                            <h3>CSS Pocket Reference</h3>
+                            <p>Know your margins from your paddings.</p>
+                            <p>Unequal heights :(</p>
+                            <img src="../images/css-book.jpg" alt="CSS Pocket Reference" />
+                        </div>
+                    </div><!--
+                    --><div class="grid__item u-1/3">
+                        <div class="product">
+                            <h3>meow vol iii</h3>
+                            <p>Volume 3, now meow's what I call literature</p>
+                            <img src="../images/meow-book.jpg" alt="meow vol 3" />
+                        </div>
+                    </div><!--
+                    --><div class="grid__item u-1/3">
+                        <div class="product">
+                            <h3>meow vol iii</h3>
+                            <p>Volume 3, now meow's what I call literature</p>
+                            <img src="../images/meow-book.jpg" alt="meow vol 3" />
+                        </div>
+                    </div><!--
+                    --><div class="grid__item u-1/3">
+                        <div class="product">
+                            <h3>meow vol iii</h3>
+                            <p>Volume 3, now meow's what I call literature</p>
+                            <img src="../images/meow-book.jpg" alt="meow vol 3" />
+                        </div>
+                    </div><!--
+                    --><div class="grid__item u-1/3">
+                        <div class="product">
+                            <h3>meow vol iii</h3>
+                            <p>Volume 3, now meow's what I call literature</p>
+                            <img src="../images/meow-book.jpg" alt="meow vol 3" />
+                        </div>
+                    </div><!--
+                    --><div class="grid__item u-1/3">
+                        <div class="product">
+                            <h3>meow vol iii</h3>
+                            <p>Volume 3, now meow's what I call literature</p>
+                            <img src="../images/meow-book.jpg" alt="meow vol 3" />
+                        </div>
+                    </div>
+                </div><!-- .grid -->
+            </section>
+
+            <section>
+                <h3>Product grid - responsive</h3>
+                <div class="grid grid--gutters">
+                    <div class="grid__item u-1/2--medium u-1/3--large">
+                        <div class="product">
+                            <h3>meow vol iii</h3>
+                            <p>Volume 3, now meow's what I call literature</p>
+                            <img src="../images/meow-book.jpg" alt="meow vol 3" />
+                        </div>
+                    </div><!--
+                    --><div class="grid__item u-1/2--medium u-1/3--large">
+                        <div class="product">
+                            <h3>meow vol iii</h3>
+                            <p>Volume 3, now meow's what I call literature</p>
+                            <img src="../images/meow-book.jpg" alt="meow vol 3" />
+                        </div>
+                    </div><!--
+                    --><div class="grid__item u-1/2--medium u-1/3--large">
+                        <div class="product">
+                            <h3>meow vol iii</h3>
+                            <p>Volume 3, now meow's what I call literature</p>
+                            <img src="../images/meow-book.jpg" alt="meow vol 3" />
+                        </div>
+                    </div><!--
+                    --><div class="grid__item u-1/2--medium u-1/3--large">
+                        <div class="product">
+                            <h3>meow vol iii</h3>
+                            <p>Volume 3, now meow's what I call literature</p>
+                            <img src="../images/meow-book.jpg" alt="meow vol 3" />
+                        </div>
+                    </div><!--
+                    --><div class="grid__item u-1/2--medium u-1/3--large">
+                        <div class="product">
+                            <h3>meow vol iii</h3>
+                            <p>Volume 3, now meow's what I call literature</p>
+                            <img src="../images/meow-book.jpg" alt="meow vol 3" />
+                        </div>
+                    </div><!--
+                    --><div class="grid__item u-1/2--medium u-1/3--large">
+                        <div class="product">
+                            <h3>meow vol iii</h3>
+                            <p>Volume 3, now meow's what I call literature</p>
+                            <img src="../images/meow-book.jpg" alt="meow vol 3" />
+                        </div>
+                    </div>
+                </div><!-- .grid -->
+            </section>
+
+            <section>
+                <h3>Task 1</h3>
+                <p>Using inline-block construct a 2x2 grid with a <code>0.5em</code> gutter.</p>
+                <p>Each grid item should contain one of the <code>&lt;div class=&quot;picure-holder&quot; /&gt;</code> div's.</p>
+
+                <p>Apply the <code>grid--gutters</code> class to the grid element to get the <code>0.5em</code> gutter</p>
+
+                <div class="picture-holder">
+                    <img src="../images/snake/snake_01.jpg" />
                 </div>
-                <footer>footer</footer>
-            </div><!-- .holy-grail -->
-
-            <h3>Gutters</h3>
-            <div class="holy-grail">
-                <header>header</header>
-                <div class="grid grid--gutters u-mv">
-                    <div class="grid__item u-3/10">
-                        <nav>nav</nav>
-                    </div><!--
-                    --><div class="grid__item u-1/2">
-                        <article>article</article>
-                    </div><!--
-                    --><div class="grid__item u-1/5">
-                        <aside>aside</aside>
-                    </div>
+                <div class="picture-holder">
+                    <img src="../images/snake/snake_02.jpg" />
                 </div>
-                <footer>footer</footer>
-            </div><!-- .holy-grail -->
-
-            <h3>Product grid</h3>
-            <div class="grid grid--gutters">
-                <div class="grid__item u-1/3">
-                    <div class="product">
-                        <h3>Acme widget</h3>
-                        <p>Beatifully crafted widget.</p>
-                        <p>Unequal heights :(</p>
-                    </div>
-                </div><!--
-                --><div class="grid__item u-1/3">
-                    <div class="product">
-                        <h3>Acme widget</h3>
-                        <p>Beatifully crafted widget.</p>
-                    </div>
-                </div><!--
-                --><div class="grid__item u-1/3">
-                    <div class="product">
-                        <h3>Acme widget</h3>
-                        <p>Beatifully crafted widget.</p>
-                    </div>
-                </div><!--
-                --><div class="grid__item u-1/3">
-                    <div class="product">
-                        <h3>Acme widget</h3>
-                        <p>Beatifully crafted widget.</p>
-                    </div>
-                </div><!--
-                --><div class="grid__item u-1/3">
-                    <div class="product">
-                        <h3>Acme widget</h3>
-                        <p>Beatifully crafted widget.</p>
-                    </div>
-                </div><!--
-                --><div class="grid__item u-1/3">
-                    <div class="product">
-                        <h3>Acme widget</h3>
-                        <p>Beatifully crafted widget.</p>
-                    </div>
+                <div class="picture-holder">
+                    <img src="../images/snake/snake_03.jpg" />
                 </div>
-            </div><!-- .grid -->
+                <div class="picture-holder">
+                    <img src="../images/snake/snake_04.jpg" />
+                </div>
+            </section>
 
-            <h3>Task 1</h3>
-            <p>Using inline-block construct a 2x2 grid with a <code>0.5em</code> gutter.</p>
-            <p>Each grid item should contain one of the <code>&lt;div class=&quot;picure-holder&quot; /&gt;</code> div's.</p>
+            <section>
+                <h3>Task 2</h3>
+                <h3>Product grid</h3>
+                <p>Create a product grid that has:-</p>
+                <ul>
+                    <li>An <code>0.5em</code> gutter, use the <code>grid--gutters</code> class.</li>
+                    <li>4 products per row on the <code>large</code> viewport</li>
+                    <li>2 products per row on the <code>medium</code> viewport</li>
+                    <li>1 products per row below the <code>medium</code> viewport</li>
+                </ul>
 
-            <p>Apply the <code>grid--gutters</code> class to the grid element to get the <code>0.5em</code> gutter</p>
+                <p>Use these great products!</p>
 
-            <div class="picture-holder">
-                <img src="../images/snake/snake_01.jpg" />
-            </div>
-            <div class="picture-holder">
-                <img src="../images/snake/snake_02.jpg" />
-            </div>
-            <div class="picture-holder">
-                <img src="../images/snake/snake_03.jpg" />
-            </div>
-            <div class="picture-holder">
-                <img src="../images/snake/snake_04.jpg" />
-            </div>
+                <div class="product">
+                    <h3>meow vol iii</h3>
+                    <p>Volume 3, now meow's what I call literature</p>
+                    <img src="../images/meow-book.jpg" alt="meow vol 3" />
+                </div>
+
+                <div class="product">
+                    <h3>CSS Pocket Reference</h3>
+                    <p>Know your margins from your paddings.</p>
+                    <img src="../images/css-book.jpg" alt="CSS Pocket Reference" />
+                </div>
+            </section>
 
         </main>
     </body>

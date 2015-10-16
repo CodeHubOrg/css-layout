@@ -2,8 +2,9 @@
     structural
 */
 .u-constrict {
-    max-width: 800px;
+    max-width: 820px;
     margin: 0 auto;
+    padding: 0.5em;
 }
 
 /*
