@@ -20,8 +20,26 @@
 }
 
 /*
-    component specific class
+    Having to deal with clearing :(
 */
 .product-grid .grid__item:nth-child(3n+1) {
     clear: left;
+}
+
+@media (min-width: 520px) {
+    .product-grid--rwd .grid__item:nth-child(3n+1) {
+        clear: none;
+    }
+    .product-grid--rwd .grid__item:nth-child(2n+1) {
+        clear: left;
+    }
+}
+
+@media (min-width: 800px) {
+    .product-grid--rwd .grid__item:nth-child(2n+1) {
+        clear: none;
+    }
+    .product-grid--rwd .grid__item:nth-child(3n+1) {
+        clear: left;
+    }
 }
