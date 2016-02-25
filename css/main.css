@@ -25,10 +25,9 @@ h2 { font-size: 1.7em; }
 a { color: #0074d9; }
 a:hover { color: #4dacff; }
 a:focus { color: #4dacff; }
-
-ul li {
-    margin: 0 0 0.3em 0;
-}
+ul { margin-bottom: 2em; }
+ul li { margin: 0 0 0.3em 0; }
+img { display: block; max-width: 100%; }
 
 /*
     structural
@@ -75,4 +74,16 @@ section:after {
 .product img {
     display: block;
     margin: 0 auto;
+}
+
+/*
+    picture holder
+*/
+.picture-holder {
+    margin-bottom: 0.5em;
+    background: #84b8e0;
+    padding: 0.5em;
+}
+.picture-holder img {
+    display: block;
 }

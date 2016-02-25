@@ -22,13 +22,3 @@
 .grid--gutters .grid__item {
     padding-left: 0.5em; /* [5] */
 }
-
-.picture-holder {
-    /*border: 1px solid #333;*/
-    margin-bottom: 0.5em;
-    background: #84b8e0;
-    padding: 0.5em;
-}
-.picture-holder img {
-    display: block;
-}
