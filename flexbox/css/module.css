@@ -1,23 +1,36 @@
-.grid {
-    display: flex;
-}
-/* variations */
 /*
+    grid
+
     1. Allow grid to cope with multiple rows
     2. Equalises the height by making the children expand to the height of their parent.
-    3. make sure itesm fill width of parent
+    3. make sure items fill width of parent
 */
-.grid--gutters {
+.o-grid {
+    display: flex;
     margin-left: -0.5em;
     flex-flow: wrap; /* [1] */
+    justify-content: space-between;
 }
-.grid--gutters .grid__item {
+.o-grid__item {
     padding-left: 0.5em;
     display: flex; /* [2] */
+    flex-grow: 1;
 }
-.grid--gutters .grid__item > * {
+.o-grid .o-grid__item > * {
     flex-grow: 1; /* [3] */
 }
+
+
+
+/* variations */
+.o-grid--flush {
+    margin-left: 0;
+}
+.o-grid--flush > .o-grid__item {
+    padding-left: 0;
+}
+
+
 
 /*
     changing order
