@@ -1,24 +1,24 @@
 /*
     grid
 */
-.grid {
+.o-grid {
     display: table;
     width: 100%;
 }
-.grid__item     {
+.o-grid__item     {
     display: table-cell;
 }
 
 /*
     variations
 */
-.grid--gutters {
+.o-grid--gutters {
     margin-left: -0.5em;
     margin-right: -0.5em;
     display: block;
     width: auto;
 }
-.grid--gutters .grid__wrap {
+.o-grid--gutters .o-grid__wrap {
     display: table;
     border-spacing: 0.5em 0;
     width: 100%;
