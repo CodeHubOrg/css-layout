@@ -1,6 +1,4 @@
-/*
-    grid
-*/
+/* grid */
 .o-grid {
     display: table;
     width: 100%;
@@ -9,9 +7,9 @@
     display: table-cell;
 }
 
-/*
-    variations
-*/
+
+
+/* variations */
 .o-grid--gutters {
     margin-left: -0.5em;
     margin-right: -0.5em;
