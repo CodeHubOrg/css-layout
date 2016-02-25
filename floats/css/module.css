@@ -1,45 +1,45 @@
-/*
-    grid
-*/
-.grid {
+/* grid */
+.o-grid {
     list-style: none;
-    margin:  0;
     padding: 0;
+    margin: 0 0 0 -0.5em;
 }
-.grid__item {
+.o-grid__item {
     float: left;
     width: 100%;
     box-sizing: border-box;
-}
-/* variations */
-.grid--gutters {
-    margin-left: -0.5em;
-}
-.grid--gutters .grid__item {
     padding-left: 0.5em;
 }
 
-/*
-    Having to deal with clearing :(
-*/
-.product-grid .grid__item:nth-child(3n+1) {
-    clear: left;
+
+
+/* variations */
+.o-grid--flush {
+    margin-left: 0;
+}
+.o-grid--flush > .o-grid__item {
+    padding-left: 0;
 }
 
+
+
+/* Having to deal with clearing :( */
+.product-grid .o-grid__item:nth-child(3n+1) {
+    clear: left;
+}
 @media (min-width: 520px) {
-    .product-grid--rwd .grid__item:nth-child(3n+1) {
+    .product-grid--rwd .o-grid__item:nth-child(3n+1) {
         clear: none;
     }
-    .product-grid--rwd .grid__item:nth-child(2n+1) {
+    .product-grid--rwd .o-grid__item:nth-child(2n+1) {
         clear: left;
     }
 }
-
 @media (min-width: 800px) {
-    .product-grid--rwd .grid__item:nth-child(2n+1) {
+    .product-grid--rwd .o-grid__item:nth-child(2n+1) {
         clear: none;
     }
-    .product-grid--rwd .grid__item:nth-child(3n+1) {
+    .product-grid--rwd .o-grid__item:nth-child(3n+1) {
         clear: left;
     }
 }
