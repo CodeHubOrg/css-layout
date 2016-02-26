@@ -79,11 +79,11 @@ section:after {
 /*
     picture holder
 */
-.picture-holder {
+.c-picture-holder {
     margin-bottom: 0.5em;
     background: #84b8e0;
     padding: 0.5em;
 }
-.picture-holder img {
+.c-picture-holder img {
     display: block;
 }
