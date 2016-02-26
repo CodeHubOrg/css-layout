@@ -1,0 +1,94 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>CSS Layout</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/1.normalize.css">
+        <link rel="stylesheet" href="../css/2.main.css">
+        <link rel="stylesheet" href="css/module.css">
+        <link rel="stylesheet" href="../css/3.utility-widths.css">
+        <link rel="stylesheet" href="../css/4.utilitiy-classes.css">
+    </head>
+    <body>
+
+        <main class="u-constrict">
+            <h1>CSS Layout</h1>
+
+            <div class="back-to">
+                <a href="../index.html">Back to menu</a>
+            </div>
+
+            <section>
+                <h3>Holy grail layout - with gutters</h3>
+                <div class="c-holy-grail">
+                    <header>header</header>
+                    <div class="o-grid o-grid-page u-mv">
+                        <nav class="o-grid__item">nav</nav>
+                        <article class="o-grid__item">article</article>
+                        <aside class="o-grid__item">aside</aside>
+                    </div>
+                    <footer>footer</footer>
+                </div><!-- .c-holy-grail -->
+            </section>
+
+            <section>
+                <h3>Holy grail layout - flush</h3>
+                <div class="c-holy-grail">
+                    <header>header</header>
+                    <div class="o-grid o-grid-page o-grid-page--flush">
+                        <nav class="o-grid__item">nav</nav>
+                        <article class="o-grid__item">article</article>
+                        <aside class="o-grid__item">aside</aside>
+                    </div>
+                    <footer>footer</footer>
+                </div><!-- .c-holy-grail -->
+            </section>
+
+            <section>
+                <h3>Product grid</h3>
+                <div class="o-grid o-grid-product">
+                    <div class="c-product o-grid__item">
+                        <h3>CSS Pocket Reference</h3>
+                        <p>Know your margins from your paddings.</p>
+                        <p>Equal heights :)</p>
+                        <img src="../images/css-book.jpg" alt="CSS Pocket Reference" />
+                    </div>
+                    <div class="c-product o-grid__item">
+                        <h3>meow vol iii</h3>
+                        <p>Volume 3, now meow's what I call literature</p>
+                        <img src="../images/meow-book.jpg" alt="meow vol 3" />
+                    </div>
+                    <div class="c-product o-grid__item">
+                        <h3>meow vol iii</h3>
+                        <p>Volume 3, now meow's what I call literature</p>
+                        <img src="../images/meow-book.jpg" alt="meow vol 3" />
+                    </div>
+                    <div class="c-product o-grid__item">
+                        <h3>CSS Pocket Reference</h3>
+                        <p>Know your margins from your paddings.</p>
+                        <img src="../images/css-book.jpg" alt="CSS Pocket Reference" />
+                    </div>
+                    <div class="c-product o-grid__item">
+                        <h3>meow vol iii</h3>
+                        <p>Volume 3, now meow's what I call literature</p>
+                        <img src="../images/meow-book.jpg" alt="meow vol 3" />
+                    </div>
+                    <div class="c-product o-grid__item">
+                        <h3>CSS Pocket Reference</h3>
+                        <p>Know your margins from your paddings.</p>
+                        <img src="../images/css-book.jpg" alt="CSS Pocket Reference" />
+                    </div>
+                </div><!-- .grid -->
+            </section>
+
+            <section>
+                <h3>Product grid - responsive</h3>
+            </section>
+
+        </main>
+
+    </body>
+</html>
