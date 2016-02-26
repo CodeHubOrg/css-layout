@@ -1,0 +1,106 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>CSS Layout</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/1.normalize.css">
+        <link rel="stylesheet" href="../css/2.main.css">
+        <link rel="stylesheet" href="css/module.css">
+        <link rel="stylesheet" href="../css/3.utility-widths.css">
+        <link rel="stylesheet" href="../css/4.utilitiy-classes.css">
+    </head>
+    <body>
+
+        <main class="u-constrict">
+            <h1>CSS Layout</h1>
+
+            <div class="back-to">
+                <a href="../index.html">Back to menu</a>
+            </div>
+
+            <section>
+                <h3>Holy grail layout - with gutters</h3>
+                <div class="c-holy-grail">
+                    <header>header</header>
+                    <div class="o-grid o-grid--gutters u-mv">
+                        <div class="o-grid__wrap">
+                            <nav class="o-grid__item u-3/10">nav</nav>
+                            <article class="o-grid__item">article</article>
+                            <aside class="o-grid__item u-1/5">aside</aside>
+                        </div>
+                    </div>
+                    <footer>footer</footer>
+                </div><!-- .c-holy-grail -->
+            </section>
+
+            <section>
+                <h3>Holy grail layout - flush</h3>
+                <div class="c-holy-grail">
+                    <header>header</header>
+                    <div class="o-grid">
+                        <nav class="o-grid__item u-3/10">nav</nav>
+                        <article class="o-grid__item">article</article>
+                        <aside class="o-grid__item u-1/5">aside</aside>
+                    </div>
+                    <footer>footer</footer>
+                </div><!-- .c-holy-grail -->
+            </section>
+
+            <section>
+                <h3>Product grid</h3>
+                <p>Adding the extra <code>&lt;div class=&quot;grid__wrap&quot; /&gt;</code> div around each row is required.</p>
+                <div class="o-grid o-grid--gutters">
+                    <div class="o-grid__wrap">
+                        <div class="o-grid__item u-1/3">
+                            <div class="c-product">
+                                <h3>Acme widget</h3>
+                                <p>Beatifully crafted widget.</p>
+                                <p>Unequal heights :(</p>
+                            </div>
+                        </div>
+                        <div class="o-grid__item u-1/3">
+                            <div class="c-product">
+                                <h3>Acme widget</h3>
+                                <p>Beatifully crafted widget.</p>
+                            </div>
+                        </div>
+                        <div class="o-grid__item u-1/3">
+                            <div class="c-product">
+                                <h3>Acme widget</h3>
+                                <p>Beatifully crafted widget.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="o-grid__wrap">
+                        <div class="o-grid__item u-1/3">
+                            <div class="c-product">
+                                <h3>Acme widget</h3>
+                                <p>Beatifully crafted widget.</p>
+                            </div>
+                        </div>
+                        <div class="o-grid__item u-1/3">
+                            <div class="c-product">
+                                <h3>Acme widget</h3>
+                                <p>Beatifully crafted widget.</p>
+                            </div>
+                        </div>
+                        <div class="o-grid__item u-1/3">
+                            <div class="c-product">
+                                <h3>Acme widget</h3>
+                                <p>Beatifully crafted widget.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- .grid -->
+            </section>
+
+            <section>
+                <h3>Product grid - responsive</h3>
+            </section>
+        </main>
+
+    </body>
+</html>
