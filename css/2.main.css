@@ -25,6 +25,8 @@ a:hover { color: #4dacff; }
 a:focus { color: #4dacff; }
 ul { margin-bottom: 2em; }
 ul li { margin: 0 0 0.3em 0; }
+ul ul { margin-bottom: 0.6em; }
+ul ul li { margin-top: 0.3em; }
 img { display: block; max-width: 100%; }
 
 
