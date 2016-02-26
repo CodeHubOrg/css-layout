@@ -66,12 +66,12 @@ section:after {
 /*
     product
 */
-.product {
+.c-product {
     background-color: #84b8e0;
     padding: 0.8em 1em;
     margin-bottom: 0.5em;
 }
-.product img {
+.c-product img {
     display: block;
     margin: 0 auto;
 }
