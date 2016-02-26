@@ -53,6 +53,28 @@ section:after {
 
 
 
+/* main nav */
+.c-main-nav {
+    margin: 2em 0 4em 0;
+}
+.c-main-nav > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.c-main-nav li {
+    font-weight: bold;
+}
+.c-main-nav li li {
+    font-weight: normal;
+}
+.c-main-nav li li:nth-child(3) a {
+    /*color: #0074d9;*/
+    font-weight: bold;
+}
+
+
+
 /* holy grail */
 .c-holy-grail {
     width: 100%;
