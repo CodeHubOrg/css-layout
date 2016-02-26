@@ -1,17 +1,13 @@
-/*
-    structural
-*/
+/* structural */
 .u-constrict {
     max-width: 820px;
     margin: 0 auto;
     padding: 0.5em;
 }
 
-/*
-    Margin helper classes.
 
-    Add margins.
-*/
+
+/* Margins */
 .u-mb   { margin-bottom: 0.5em !important; }
 .u-mb\+ { margin-bottom: 2em !important; }
 .u-mt   { margin-top: 0.5em !important; }
@@ -20,6 +16,8 @@
     margin-top: 0.5em !important;
     margin-bottom: 0.5em !important;
 }
+
+
 
 /*
     Clearfix: contain floats
