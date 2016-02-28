@@ -24,7 +24,7 @@ p { margin: 0 0 1em 0;}
 a { color: #0074d9; }
 a:hover { color: #4dacff; }
 a:focus { color: #4dacff; }
-ul { margin-bottom: 2em; }
+ul { margin: 0 0 2em 0; }
 ul li { margin: 0 0 0.3em 0; }
 ul ul { margin-bottom: 0.6em; }
 ul ul li { margin-top: 0.3em; }
@@ -95,7 +95,6 @@ section:after {
     content: '';
 }
 .c-main-nav li li:nth-child(3) a {
-    /*color: #0074d9;*/
     font-weight: bold;
     color: #37BC61;
 }
