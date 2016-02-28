@@ -20,6 +20,7 @@ h1 {
     padding-bottom: 0.3em;
 }
 h2 { font-size: 1.7em; }
+p { margin: 0 0 1em 0;}
 a { color: #0074d9; }
 a:hover { color: #4dacff; }
 a:focus { color: #4dacff; }
@@ -51,26 +52,52 @@ section:after {
     margin-bottom: 1em;
 }
 
+/* credits */
+.c-credits {
+    font-size: 0.9em;
+    border: 1px solid #ccc;
+    padding: 1em;
+    margin-bottom: 1.5em;
+    background-color: #efefef;
+}
+.c-credits p:last-child {
+    margin: 0;
+}
+.c-credits--head {
+}
 
 
 /* main nav */
 .c-main-nav {
-    margin: 2em 0 4em 0;
+    margin: 0 0 2em 0;
 }
-.c-main-nav > ul {
+.c-main-nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-.c-main-nav li {
+.c-main-nav ul ul {
+    margin-left: 1.2em;
+}
+.c-main-nav > ul > li {
     font-weight: bold;
+    margin-bottom: 1em;
 }
 .c-main-nav li li {
+    display: inline-block;
+    margin-right: 0.2em;
     font-weight: normal;
+}
+.c-main-nav li li:after {
+    content: ',';
+}
+.c-main-nav li li:last-child:after {
+    content: '';
 }
 .c-main-nav li li:nth-child(3) a {
     /*color: #0074d9;*/
     font-weight: bold;
+    color: #37BC61;
 }
 
 
