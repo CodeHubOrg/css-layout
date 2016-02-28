@@ -95,15 +95,33 @@ section:after {
     padding: 1em;
     margin-bottom: 0.5em;
 }
+.c-holy-grail nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.c-holy-grail nav a {
+    color: black;
+}
 .c-holy-grail article {
     background-color: #d6d6d6;
     padding: 1em;
     margin-bottom: 0.5em;
 }
+.c-holy-grail h1 {
+    font-size: 1.5em;
+}
 .c-holy-grail aside {
     background-color: #f36a2b;
-    padding: 1em;
     margin-bottom: 0.5em;
+}
+.c-holy-grail aside h3 {
+    font-size: 1em;
+    font-weight: normal;
+}
+.c-holy-grail aside > * {
+    background-color: #f36a2b;
+    margin-bottom: 0;
 }
 
 
