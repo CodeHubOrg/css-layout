@@ -79,11 +79,32 @@ section:after {
 .c-holy-grail {
     width: 100%;
 }
-.c-holy-grail header  { background-color: #666666; padding: 1em; color: white; }
-.c-holy-grail footer  { background-color: #666666; padding: 1em; color: white; }
-.c-holy-grail nav     { background-color: #84b8e0; padding: 1em; }
-.c-holy-grail article { background-color: #d6d6d6; padding: 1em; }
-.c-holy-grail aside   { background-color: #f36a2b; padding: 1em; }
+.c-holy-grail header {
+    background-color: #666666;
+    padding: 1em;
+    color: white;
+    margin-bottom: 0.5em;
+}
+.c-holy-grail footer {
+    background-color: #666666;
+    padding: 1em;
+    color: white;
+}
+.c-holy-grail nav {
+    background-color: #84b8e0;
+    padding: 1em;
+    margin-bottom: 0.5em;
+}
+.c-holy-grail article {
+    background-color: #d6d6d6;
+    padding: 1em;
+    margin-bottom: 0.5em;
+}
+.c-holy-grail aside {
+    background-color: #f36a2b;
+    padding: 1em;
+    margin-bottom: 0.5em;
+}
 
 
 
