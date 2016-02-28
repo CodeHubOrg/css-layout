@@ -1,46 +1,62 @@
-/* page grid */
-.o-grid-page {
-    display: grid;
-    /*grid-template-rows: repeat(auto, auto);*/
-    grid-template-columns: 30% 0.5em 1fr 0.5em 20%;
-    /*
-    grid-row: 2 / 3;
-    column-gap: 1em;
-    row-gap: 1em;
-    */
-}
-.o-grid-page > .o-grid__item:nth-child(1) {
-    grid-column: 1 / 2;
-}
-.o-grid-page > .o-grid__item:nth-child(2) {
-    grid-column: 3 / 4;
-}
-.o-grid-page > .o-grid__item:nth-child(3) {
-    grid-column: 5 / 6;
-}
+/*
+    page grid
 
-/* variations */
-.o-grid-page--flush {
-    grid-template-columns: 30% 1fr 20%;
-}
-.o-grid-page--flush > .o-grid__item {
-    grid-column: auto !important;
+    1. The fr unit stands for 'fraction of available space'.
+    2. grid-column defines the start and end of the grid item.
+*/
+@media (min-width: 800px) {
+    .o-grid-page {
+        display: grid;
+        grid-template-columns: 30% 0.5em 1fr 0.5em 20%; /* [1] */
+
+        /*
+        grid-template-columns: 30% 1fr 20%;
+        column-gap: 1em;
+        row-gap: 1em;
+        */
+    }
+    .o-grid-page > .o-grid__item:nth-child(1) {
+        grid-column: 1 / span 1; /* [2] */
+    }
+    .o-grid-page > .o-grid__item:nth-child(2) {
+        grid-column: 3 / span 1;
+    }
+    .o-grid-page > .o-grid__item:nth-child(3) {
+        grid-column: 5 / span 1;
+    }
+
+    /*
+        variations
+        1. Override the grid-columns set using nth-child
+    */
+    .o-grid-page--flush {
+        grid-template-columns: 30% 1fr 20%;
+    }
+    .o-grid-page--flush > .o-grid__item {
+        grid-column: auto !important; /* [1] */
+    }
 }
 
 
 
 /* product grid */
-.o-grid-product {
-    display: grid;
-    /*grid-template-rows: repeat(auto, auto);*/
-    grid-template-columns: 33.333% 0.5em 1fr 0.5em 33.333%;
+@media (min-width: 520px) {
+    .o-grid-product {
+        display: grid;
+        grid-template-columns: 50% 0.5em 50%;
+    }
+}
+@media (min-width: 800px) {
+    .o-grid-product {
+        grid-template-columns: 33.333% 0.5em 1fr 0.5em 33.333%;
+    }
 }
 .o-grid-product .o-grid__item:nth-child(3n+1) {
-    grid-column: 1 / 2;
+    grid-column: 1 / span 1;
 }
 .o-grid-product .o-grid__item:nth-child(3n+2) {
-    grid-column: 3 / 4;
+    grid-column: 3 / span 1;
 }
 .o-grid-product .o-grid__item:nth-child(3n) {
-    grid-column: 5 / 6;
+    grid-column: 5 / span 1;
 }
