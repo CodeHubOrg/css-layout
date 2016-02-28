@@ -1,24 +1,26 @@
 /* grid */
-.o-grid {
-    display: table;
-    width: 100%;
-}
-.o-grid__item     {
-    display: table-cell;
+@media (min-width: 800px) {
+    .o-grid {
+        margin-left: -0.5em;
+        margin-right: -0.5em;
+    }
+    .o-grid__item {
+        display: table-cell;
+    }
+    .o-grid__wrap {
+        display: table;
+        border-spacing: 0.5em 0;
+        width: 100%;
+        table-layout: fixed;
+    }
 }
 
 
 
 /* variations */
-.o-grid--gutters {
-    margin-left: -0.5em;
-    margin-right: -0.5em;
-    display: block;
-    width: auto;
-}
-.o-grid--gutters .o-grid__wrap {
+.o-grid--flush {
     display: table;
-    border-spacing: 0.5em 0;
     width: 100%;
-    table-layout: fixed;
+    margin-left: 0;
+    margin-right: 0;
 }
