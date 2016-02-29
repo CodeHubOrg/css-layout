@@ -16,16 +16,6 @@
 
 
 
-/* ghost */
-.ghost-scene {
-    background: #7EC0EE;
-    height: 450px;
-    max-width: 300px;
-    border-bottom: 40px solid #01A611;
-}
-
-
-
 /* justified nav */
 .task-nav {
     margin-bottom: 2em;

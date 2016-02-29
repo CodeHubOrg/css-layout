@@ -10,11 +10,10 @@
 
 
 
-.wall {
-    display: flex;
-    flex-flow: wrap;
-    width: 500px;
-    margin-top: 2em;
-    align-items: stretch;
-    flex-direction: row-reverse;
+/* ghost */
+.ghost-scene {
+    background: #7EC0EE;
+    height: 450px;
+    max-width: 300px;
+    border-bottom: 40px solid #01A611;
 }
