@@ -197,3 +197,8 @@ section:after,
 .c-picture-holder img {
     display: block;
 }
+.c-picture-holder__cite {
+    background: #efefef;
+    padding: 0.2em;
+    font-size: 0.9em;
+}

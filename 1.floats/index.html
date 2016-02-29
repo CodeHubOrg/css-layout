@@ -26,12 +26,17 @@
 
                 <p>Floats were part of the CSS Level 1 spec in <a href="https://www.w3.org/TR/REC-CSS1/#floating-elements">1996</a>. They began to be used on websites for layout around 2001 but didn't really catch on until 2004ish.</p>
 
-                <p>Floats were not actually intended to page layout</p>
+                <p><code>float</code> was not intended overall page layout. The <code>float</code> property was intended for floating content and having other content flow around it.</p>
 
-                <p><strong>Talk about</strong></p>
-                <ul>
-                    <li>Having to clear floats</li>
-                </ul>
+                <div class="c-picture-holder u-inline-block u-mb">
+                    <img src="../images/web-text-wrap.png" />
+                    <div class="c-picture-holder__cite">
+                        Image from: <a href="https://css-tricks.com/all-about-floats/">css-tricks.com</a>
+                    </div>
+                </div>
+
+                <p>So if we want to use it for layout we will have to deal with clearing the floats. This can get tedious when creating responsive layouts - <code>nth-child()</code>.</p>
+
             </section>
 
         </main>
