@@ -33,10 +33,12 @@ img { display: block; max-width: 100%; }
 
 
 /* structural */
-section {
+section,
+.section {
     margin-bottom: 2em;
 }
-section:after {
+section:after,
+.section:after {
     content: '';
     display: block;
     height: 1px;
@@ -64,6 +66,20 @@ section:after {
     margin: 0;
 }
 .c-credits--head {
+}
+
+
+/* footer */
+footer {
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    margin: 2em 2em 0;
+}
+footer img {
+    width: 50%;
+    margin-bottom: -5%;
+    flex-grow: 1;
 }
 
 
@@ -168,8 +184,7 @@ section:after {
 /* picture holder */
 .c-picture-holder {
     margin-bottom: 0.5em;
-    background: #84b8e0;
-    padding: 0.5em;
+    border: 0.5em solid #84b8e0;
 }
 .c-picture-holder img {
     display: block;
