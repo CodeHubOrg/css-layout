@@ -1,0 +1,41 @@
+/*
+    grid
+*/
+.o-grid {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0 -0.5em;
+}
+.o-grid__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 0.5em;
+}
+
+
+
+/* ghost */
+.ghost-scene {
+    background: #7EC0EE;
+    height: 450px;
+    max-width: 300px;
+    border-bottom: 40px solid #01A611;
+}
+
+
+
+/* justified nav */
+.task-nav {
+    margin-bottom: 2em;
+}
+.task-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.task-nav li {
+    background: #efefef;
+    padding: 1em;
+}
