@@ -24,18 +24,8 @@
     .o-grid-page > .o-grid__item:nth-child(3) {
         grid-column: 5 / span 1;
     }
-
-    /*
-        variations
-        1. Override the grid-columns set using nth-child
-    */
-    .o-grid-page--flush {
-        grid-template-columns: 30% 1fr 20%;
-    }
-    .o-grid-page--flush > .o-grid__item {
-        grid-column: auto !important; /* [1] */
-    }
 }
+
 
 
 

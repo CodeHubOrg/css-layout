@@ -16,15 +16,13 @@
     box-sizing: border-box;
     padding-left: 0.5em;
 }
-/* variations */
-.o-grid--flush { margin-left: 0; }
-.o-grid--flush .o-grid__item { padding-left: 0; }
 .o-grid--flex {
     display: flex;
     flex-flow: wrap;
 }
 .o-grid--flex .o-grid__item { display: flex; }
 .o-grid--flex .o-grid__item > * { flex-grow: 1; }
+
 
 
 
@@ -58,6 +56,7 @@
 
 
 
+
 /*
     Centrally align content
 */
@@ -80,6 +79,7 @@
     align-items: center;
     justify-content: center;
 }
+
 
 
 
@@ -125,7 +125,6 @@
 }
 .exmaple-page aside { background: purple; }
 .exmaple-page article { background: green; }
-/* variations */
 .exmaple-page--flex { display: flex; }
 .exmaple-page--flex .example-page__col {
     display: flex;

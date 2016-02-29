@@ -23,14 +23,6 @@
 
 
 
-/* variations */
-.o-grid--flush {
-    margin-left: 0;
-}
-.o-grid--flush > .o-grid__item {
-    padding-left: 0;
-}
-
 
 /*
     holy grail - variations
@@ -46,12 +38,3 @@
         order: 1;
     }
 }
-
-
-/*
-    changing order
-*/
-.aside-1 { order: 1; }
-.main    { order: 2; }
-.aside-2 { order: 3; }
-.footer  { order: 4; }
