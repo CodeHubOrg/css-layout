@@ -12,6 +12,7 @@ body {
     font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 1.25em;
     padding-top: 1em;
+    line-height: 1.4;
 }
 h1, h2, h3, h4 { margin-top: 0; }
 h1 {
@@ -116,7 +117,7 @@ section:after,
 .c-main-nav li li:last-child:after {
     content: '';
 }
-.c-main-nav li li:nth-child(3) a {
+.c-main-nav__tasks a {
     font-weight: bold;
     color: #37BC61;
 }
