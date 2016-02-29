@@ -164,7 +164,7 @@
             </section>
 
             <section>
-                <h3>Grid - column spanning</h3>
+                <h3>Column and row spanning</h3>
 
                 <p>It's pretty straight forward to do complex row spanning with <code>inline-block</code> or <code>float</code> based layouts.</p>
 
@@ -218,10 +218,10 @@
 
                 <p class="h3">But!</p>
 
-                <p>On it's own using <code>inline-block</code> or <code>floats</code> are not really able to layout grid items out on a row (row spanning).</p>
+                <p>On it's own using <code>inline-block</code> or <code>floats</code> are not really able to layout grid items out on a column (col spanning).</p>
 
-                <div class="exmaple-page u-mb">
-                    <div class="example-page__col">
+                <div class="multi-dime u-mb">
+                    <div class="multi-dime__col">
                         <nav>
                             <ul>
                                 <li><a href="/">nav item</a></li>
@@ -238,7 +238,7 @@
                             </div>
                         </aside>
                     </div><!--
-                    --><div class="example-page__col">
+                    --><div class="multi-dime__col">
                         <header>CSS Layout</header>
                         <article>
                             <h1>Article heading</h1>
@@ -247,12 +247,10 @@
                     </div>
                 </div>
 
-                <p><code>flexbox</code> can also be used to lay grid items out on a row but it can also be used to lay things out in a column due to it's <code>flex-direction</code> attribute.</p>
+                <p>You can add <code>flexbox</code> and use it's <code>flex-direction</code> property to layout items over a column (col spanning)</p>
 
-                <p>You can combine an <code>inline-block</code> or <code>float</code> layout with <code>flexbox</code> to progressivly enhance your layout.</p>
-
-                <div class="exmaple-page exmaple-page--flex">
-                    <div class="example-page__col">
+                <div class="multi-dime multi-dime--flex">
+                    <div class="multi-dime__col">
                         <nav>
                             <ul>
                                 <li><a href="/">Home</a></li>
@@ -269,11 +267,11 @@
                             </div>
                         </aside>
                     </div><!--
-                    --><div class="example-page__col">
+                    --><div class="multi-dime__col">
                         <header>CSS Layout</header>
                         <article>
                             <h1>Article heading</h1>
-                            <p>The introduction of flexboox and CSS Grids gives developers great tools to laying out web pages.</p>
+                            <p>The introduction of flexboox and CSS Grids gives developers great tools for laying out web pages.</p>
                         </article>
                     </div>
                 </div>

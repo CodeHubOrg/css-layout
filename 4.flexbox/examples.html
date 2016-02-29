@@ -23,8 +23,12 @@
 
             <section>
                 <h2>flexbox</h2>
+                <p>Page layouts can be easily achieved with the added bonus of equalised heights. To create gutters we can use the same technique with negative margin and added paddings like we did with the <code>float</code> and <code>inline-block</code> layouts.</p>
+
+                <p>We can again combine our grid CSS with the width utility classes for easy responsive layouts.</p>
 
                 <h3>Holy grail layout</h3>
+
                 <div class="c-holy-grail">
                     <header>header</header>
                     <div class="o-grid">
@@ -57,8 +61,11 @@
                 </div><!-- .c-holy-grail -->
             </section>
 
-            <section>
+            <section id="flex-order">
                 <h3>Holy grail layout - different order, same markup</h3>
+                <p>I very useful benefit of <code>flexbox</code> is the <code>order</code> property which can be used to change the display order of items without changing the source order.</p>
+                <p>This is a common situation in responsive layouts where you might want a certain order on smaller viewports and a different one on larger viewports. Resize to browser to see that the <code>nav</code> element comes after the header on smaller viewports.</p>
+
                 <div class="c-holy-grail">
                     <header>header</header>
                     <div class="o-grid holy-grail--flex-order">
@@ -93,6 +100,8 @@
 
             <section>
                 <h3>Product grid</h3>
+                <p>This may look like a multi dimensional layout but really its a one dimensional layout with wrapping. If the wrapping was turned off it would all display in one line.</p>
+                <p>Row spanning is easily achievable in one dimensional layouts but col spanning is not possible.</p>
                 <div class="o-grid">
                     <div class="o-grid__item u-1/2--medium u-1/3--large">
                         <div class="c-product">
@@ -138,6 +147,79 @@
                         </div>
                     </div>
                 </div><!-- .grid -->
+            </section>
+
+            <section id="flex-justify">
+                <h3>Justified content</h3>
+                <p>flexbox's <code>justify-content: space-between;</code> can be used to easily distribute items evenly along a line.</p>
+                <nav class="justified-nav">
+                    <ul>
+                        <li><a href="/">Products</a></li>
+                        <li><a href="/">Categories</a></li>
+                        <li><a href="/">Find store</a></li>
+                        <li><a href="/">Blog</a></li>
+                        <li><a href="/">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <p>You can layout items along a line vertically by using the <code>flex-direction</code> property.</p>
+                <nav class="justified-nav justified-nav--direction">
+                    <ul>
+                        <li><a href="/">Products</a></li>
+                        <li><a href="/">Categories</a></li>
+                        <li><a href="/">Find store</a></li>
+                        <li><a href="/">Blog</a></li>
+                        <li><a href="/">Contact</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section>
+                <h3>Vertically aligned content</h3>
+                <p>Vertically aligning items is now trivially easy.</p>
+
+                <div class="v-text v-text--flex">
+                    <blockquote>Vertically centered text!</blockquote>
+                </div>
+            </section>
+
+            <section id="flex-justify">
+                <h3>Column and row spanning</h3>
+
+                <p>You can create a multi dimensional layout that has both row spanning and col spanning by combining multiple <code>flexbox</code> declarations. In the example below we have three <code>flexbox</code> declarations.</p>
+
+                <p>The first is on the <code>&lt;div class=&quot;multi-dime&quot;&gt;</code> wrapper element which lays the <code>&lt;div class=&quot;multi-dime__col&quot;&gt;</code> elements out side by side.</p>
+
+                <p>Then <code>flexbox</code> is declared on the two <code>&lt;div class=&quot;multi-dime__col&quot;&gt;</code> elements with the property <code>flex-direction: column</code> declared so the elements inside are displayed vertically</p>
+
+                <p>The <code>flex-grow</code> property is used on the <code>header</code> and <code>article</code> elements to col span.</p>
+
+                <div class="multi-dime">
+                    <div class="multi-dime__col">
+                        <nav>
+                            <ul>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/">Flexbox</a></li>
+                                <li><a href="/">Grid</a></li>
+                                <li><a href="/">Reading</a></li>
+                            </ul>
+                        </nav>
+                        <aside>
+                            <div class="c-product">
+                                <h3>CSS Pocket Reference</h3>
+                                <p>Know your margins from your paddings.</p>
+                                <img src="../images/css-book.jpg" alt="CSS Pocket Reference" />
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="multi-dime__col">
+                        <header>CSS Layout</header>
+                        <article>
+                            <h1>Article heading</h1>
+                            <p>The introduction of flexboox and CSS Grids gives developers great tools for laying out web pages.</p>
+                        </article>
+                    </div>
+                </div>
             </section>
         </main>
 

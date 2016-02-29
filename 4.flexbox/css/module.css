@@ -38,3 +38,104 @@
         order: 1;
     }
 }
+
+
+
+
+/* justified Nav */
+.justified-nav {
+    margin-bottom: 2em;
+}
+.justified-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.justified-nav li {
+    background: #efefef;
+    padding: 1em;
+    margin: 0 0 0.5em 0;
+}
+.justified-nav a {
+    display: block;
+}
+@media (min-width: 800px) {
+    .justified-nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    .justified-nav--direction ul {
+        height: 580px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .justified-nav--reverse {
+        flex-wrap: wrap-reverse;
+    }
+}
+
+
+
+
+/*
+    Vertically aligned content
+*/
+.v-text {
+    position:  relative;
+    height: 200px;
+    max-width: 300px;
+    background: #7EC0EE;
+    margin-bottom: 0.5em;
+}
+.v-text blockquote {
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 10px;
+    background: white;
+    display: inline-block;
+}
+.v-text--flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/*
+    Multidimensional layout
+
+    1. Row layout
+    2. Col layout
+*/
+/* structural */
+.multi-dime {
+    margin-left: -0.5em;
+    display: flex; /* [1] */
+}
+.multi-dime__col {
+    display: flex; /* [2] */
+    flex-direction: column; /* [2] */
+    width: 50%;
+    padding-left: 0.5em;
+}
+.multi-dime header { flex-grow: 0; }
+.multi-dime article { flex-grow: 1; }
+/* cosmetic styling */
+.multi-dime header,
+.multi-dime nav,
+.multi-dime aside,
+.multi-dime article { background: white; border: 10px solid black;
+                      margin-bottom: 10px; padding: 20px; }
+.multi-dime aside { background: purple; }
+.multi-dime article { background: green; }
+.multi-dime header { background: orange; font-size: 1.5em; }
+.multi-dime nav { padding: 10px; background: white; }
+.multi-dime nav ul { list-style: none; margin: 0;
+                      padding: 0; }
+.multi-dime nav li:last-child { margin-bottom: 0; }
+.multi-dime nav a { display: block; color: white;
+                    background: grey; padding: 0.5em;
+                    text-decoration: none; }
+.multi-dime nav a:hover,
+.multi-dime nav a:focus { background: #ccc; color: black; }
