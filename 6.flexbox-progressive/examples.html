@@ -21,8 +21,17 @@
                 <a href="../index.html">Back to menu</a>
             </div>
 
+            <div class="section">
+                <p><code>flexbox</code> can be used with both <code>inline-block</code> or <code>float</code> based layouts to progressively enhance your layout.</p>
+
+                <p>All these examples use <code>inline-block</code>.</p>
+            </div>
+
             <section>
                 <h3>Holy grail layout - <span class="u-success">Progressively enhanced equal heights</span></h3>
+
+                <p>With a little bit of flexbox the heights on this grid can be equalised.</p>
+
                 <div class="c-holy-grail">
                     <header>header</header>
                     <div class="o-grid o-grid--flex">
@@ -57,6 +66,9 @@
 
             <section>
                 <h3>Holy grail layout - flush - <span class="u-success">Progressively enhanced equal heights</span></h3>
+
+                <p>With a little bit of flexbox the heights on this grid can be equalised.</p>
+
                 <div class="c-holy-grail">
                     <header class="u-mb0">header</header>
                     <div class="o-grid o-grid--flex o-grid--flush">
@@ -91,6 +103,9 @@
 
             <section>
                 <h3>Product grid - <span class="u-success">Progressively enhanced equal heights</span></h3>
+
+                <p>With a little bit of flexbox the heights on this grid can be equalised.</p>
+
                 <div class="o-grid o-grid--flex">
                     <div class="o-grid__item u-1/2--medium u-1/3--large">
                         <div class="c-product">
@@ -152,7 +167,7 @@
                     </ul>
                 </nav>
 
-                <p>Add in some flexbox to progressively enhance it into a justified menu.</p>
+                <p>Add in some <code>flexbox</code> to progressively enhance it into a justified menu.</p>
                 <nav class="c-example-nav c-example-nav--justified">
                     <ul>
                         <li><a href="/">Products</a></li><!--
@@ -167,7 +182,7 @@
             <section>
                 <h3>Centrally aligned content</h3>
 
-                <p>Sometimes you might wanted vertically align items. But it's not crucial. Progressively enhance by adding flexbox.</p>
+                <p>Sometimes you might wanted vertically align items. But it's not crucial. Progressively enhance by adding <code>flexbox</code>.</p>
                 <div class="o-grid">
                     <div class="o-grid__item u-1/2--large">
                         <div class="v-text">
@@ -179,6 +194,122 @@
                         <div class="v-text v-text--flex">
                             <blockquote>Vertically centered text!</blockquote>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3>Grid - column spanning</h3>
+
+                <p>It's pretty straight forward to do complex row spanning with <code>inline-block</code> or <code>float</code> based layouts.</p>
+
+                <div class="o-grid o-grid--flex wall u-mb">
+                    <div class="o-grid__item u-3/12">
+                        <div class="c-picture-holder">
+                            <img src="../images/brick-11.png" />
+                        </div>
+                    </div><!--
+                    --><div class="o-grid__item u-3/12">
+                        <div class="c-picture-holder">
+                            <img src="../images/brick-2.png" />
+                        </div>
+                    </div><!--
+                    --><div class="o-grid__item u-3/12">
+                        <div class="c-picture-holder">
+                            <img src="../images/brick-3.png" />
+                        </div>
+                    </div><!--
+                    --><div class="o-grid__item u-3/12">
+                        <div class="c-picture-holder">
+                            <img src="../images/brick-4.png" />
+                        </div>
+                    </div><!--
+                    --><div class="o-grid__item u-7/12">
+                        <div class="c-picture-holder">
+                            <img src="../images/brick-5.png" />
+                        </div>
+                    </div><!--
+                    --><div class="o-grid__item u-5/12">
+                        <div class="c-picture-holder">
+                            <img src="../images/brick-6.png" />
+                        </div>
+                    </div><!--
+                    --><div class="o-grid__item u-4/12">
+                        <div class="c-picture-holder">
+                            <img src="../images/brick-7.png" />
+                        </div>
+                    </div><!--
+                    --><div class="o-grid__item u-4/12">
+                        <div class="c-picture-holder">
+                            <img src="../images/brick-8.png" />
+                        </div>
+                    </div><!--
+                    --><div class="o-grid__item u-4/12">
+                        <div class="c-picture-holder">
+                            <img src="../images/brick-10.png" />
+                        </div>
+                    </div>
+                </div>
+
+                <p class="h3">But!</p>
+
+                <p>On it's own using <code>inline-block</code> or <code>floats</code> are not really able to layout grid items out on a row (row spanning).</p>
+
+                <div class="exmaple-page u-mb">
+                    <div class="example-page__col">
+                        <nav>
+                            <ul>
+                                <li><a href="/">nav item</a></li>
+                                <li><a href="/">nav item</a></li>
+                                <li><a href="/">nav item</a></li>
+                                <li><a href="/">nav item</a></li>
+                            </ul>
+                        </nav>
+                        <aside>
+                            <div class="c-product">
+                                <h3>CSS Pocket Reference</h3>
+                                <p>Know your margins from your paddings.</p>
+                                <img src="../images/css-book.jpg" alt="CSS Pocket Reference" />
+                            </div>
+                        </aside>
+                    </div><!--
+                    --><div class="example-page__col">
+                        <header>CSS Layout</header>
+                        <article>
+                            <h1>Article heading</h1>
+                            <p>The introduction of flexboox and CSS Grids gives developers great tools to laying out web pages.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <p><code>flexbox</code> can also be used to lay grid items out on a row but it can also be used to lay things out in a column due to it's <code>flex-direction</code> attribute.</p>
+
+                <p>You can combine an <code>inline-block</code> or <code>float</code> layout with <code>flexbox</code> to progressivly enhance your layout.</p>
+
+                <div class="exmaple-page exmaple-page--flex">
+                    <div class="example-page__col">
+                        <nav>
+                            <ul>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/">Flexbox</a></li>
+                                <li><a href="/">Grid</a></li>
+                                <li><a href="/">Reading</a></li>
+                            </ul>
+                        </nav>
+                        <aside>
+                            <div class="c-product">
+                                <h3>CSS Pocket Reference</h3>
+                                <p>Know your margins from your paddings.</p>
+                                <img src="../images/css-book.jpg" alt="CSS Pocket Reference" />
+                            </div>
+                        </aside>
+                    </div><!--
+                    --><div class="example-page__col">
+                        <header>CSS Layout</header>
+                        <article>
+                            <h1>Article heading</h1>
+                            <p>The introduction of flexboox and CSS Grids gives developers great tools to laying out web pages.</p>
+                        </article>
                     </div>
                 </div>
             </section>
