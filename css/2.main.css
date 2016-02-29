@@ -70,13 +70,13 @@ section:after,
 
 
 /* footer */
-footer {
+.site-footer {
     display: flex;
     align-items: flex-end;
     overflow: hidden;
     margin: 2em 2em 0;
 }
-footer img {
+.site-footer img {
     width: 50%;
     margin-bottom: -5%;
     flex-grow: 1;
