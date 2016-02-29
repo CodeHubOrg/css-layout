@@ -22,10 +22,10 @@
             </div>
 
             <section>
-                <h3>Holy grail layout</h3>
+                <h3>Holy grail layout - <span class="u-success">Progressively enhanced equal heights</span></h3>
                 <div class="c-holy-grail">
                     <header>header</header>
-                    <div class="o-grid">
+                    <div class="o-grid o-grid--flex">
                         <div class="o-grid__item u-3/10--large">
                             <nav>
                                 <ul>
@@ -56,10 +56,10 @@
             </section>
 
             <section>
-                <h3>Holy grail layout - flush</h3>
+                <h3>Holy grail layout - flush - <span class="u-success">Progressively enhanced equal heights</span></h3>
                 <div class="c-holy-grail">
                     <header class="u-mb0">header</header>
-                    <div class="o-grid o-grid--flush">
+                    <div class="o-grid o-grid--flex o-grid--flush">
                         <div class="o-grid__item u-3/10--large">
                             <nav class="u-mb0">
                                 <ul>
@@ -90,9 +90,9 @@
             </section>
 
             <section>
-                <h3>Product grid</h3>
-                <div class="o-grid">
-                    <div class="o-grid__item u-1/3">
+                <h3>Product grid - <span class="u-success">Progressively enhanced equal heights</span></h3>
+                <div class="o-grid o-grid--flex">
+                    <div class="o-grid__item u-1/2--medium u-1/3--larg">
                         <div class="c-product">
                             <h3>CSS Pocket Reference</h3>
                             <p>Know your margins from your paddings.</p>
@@ -100,35 +100,35 @@
                             <img src="../images/css-book.jpg" alt="CSS Pocket Reference" />
                         </div>
                     </div><!--
-                    --><div class="o-grid__item u-1/3">
+                    --><div class="o-grid__item u-1/2--medium u-1/3--larg">
                         <div class="c-product">
                             <h3>meow vol iii</h3>
                             <p>Volume 3, now meow's what I call literature</p>
                             <img src="../images/meow-book.jpg" alt="meow vol 3" />
                         </div>
                     </div><!--
-                    --><div class="o-grid__item u-1/3">
+                    --><div class="o-grid__item u-1/2--medium u-1/3--larg">
                         <div class="c-product">
                             <h3>meow vol iii</h3>
                             <p>Volume 3, now meow's what I call literature</p>
                             <img src="../images/meow-book.jpg" alt="meow vol 3" />
                         </div>
                     </div><!--
-                    --><div class="o-grid__item u-1/3">
+                    --><div class="o-grid__item u-1/2--medium u-1/3--larg">
                         <div class="c-product">
                             <h3>CSS Pocket Reference</h3>
                             <p>Know your margins from your paddings.</p>
                             <img src="../images/css-book.jpg" alt="CSS Pocket Reference" />
                         </div>
                     </div><!--
-                    --><div class="o-grid__item u-1/3">
+                    --><div class="o-grid__item u-1/2--medium u-1/3--larg">
                         <div class="c-product">
                             <h3>meow vol iii</h3>
                             <p>Volume 3, now meow's what I call literature</p>
                             <img src="../images/meow-book.jpg" alt="meow vol 3" />
                         </div>
                     </div><!--
-                    --><div class="o-grid__item u-1/3">
+                    --><div class="o-grid__item u-1/2--medium u-1/3--larg">
                         <div class="c-product">
                             <h3>CSS Pocket Reference</h3>
                             <p>Know your margins from your paddings.</p>
@@ -140,9 +140,20 @@
 
             <section>
                 <h3>Justified content</h3>
-                <p>This can be acheived without using flexbox and using <a href="http://www.barrelny.com/blog/text-align-justify-and-rwd/">inline-block only</a> but it does come with some caveats.</p>
+                <p>This menu works well on its own just using inline-block.</p>
 
-                <nav class="c-site-nav">
+                <nav class="c-example-nav">
+                    <ul>
+                        <li><a href="/">Products</a></li><!--
+                        --><li><a href="/">Categories</a></li><!--
+                        --><li><a href="/">Find store</a></li><!--
+                        --><li><a href="/">Blog</a></li><!--
+                        --><li><a href="/">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <p>Add in some flexbox to progressively enhance it into a justified menu.</p>
+                <nav class="c-example-nav c-example-nav--justified">
                     <ul>
                         <li><a href="/">Products</a></li><!--
                         --><li><a href="/">Categories</a></li><!--
@@ -155,8 +166,40 @@
 
             <section>
                 <h3>Centrally aligned content</h3>
-                <div class="c-picture-holder happy-mushroom">
-                    <img src="../images/mushroom-happy.jpg" />
+                <p>These mushrooms are happy.</p>
+
+                <div class="o-grid happy-mushrooms u-mb+">
+                    <div class="o-grid__item u-1/3--medium">
+                        <div class="c-picture-holder mushroom">
+                            <img src="../images/mushroom-happy.jpg" />
+                        </div>
+                    </div><!--
+                    --><div class="o-grid__item u-1/3--medium">
+                        <p>Two happy mushrooms.</p>
+                    </div><!--
+                    --><div class="o-grid__item u-1/3--medium">
+                        <div class="c-picture-holder mushroom mushroom--flip">
+                            <img src="../images/mushroom-happy.jpg" />
+                        </div>
+                    </div>
+                </div>
+
+                <p>These mushrooms are happier.</p>
+
+                <div class="o-grid o-grid--flex happy-mushrooms happy-mushrooms--happier">
+                    <div class="o-grid__item u-1/3--medium">
+                        <div class="c-picture-holder mushroom">
+                            <img src="../images/mushroom-happy.jpg" />
+                        </div>
+                    </div><!--
+                    --><div class="o-grid__item u-1/3--medium">
+                        <p>Two very happy mushrooms.</p>
+                    </div><!--
+                    --><div class="o-grid__item u-1/3--medium">
+                        <div class="c-picture-holder mushroom mushroom--flip">
+                            <img src="../images/mushroom-happy.jpg" />
+                        </div>
+                    </div>
                 </div>
             </section>
 
