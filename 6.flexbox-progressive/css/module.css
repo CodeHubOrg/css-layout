@@ -1,5 +1,8 @@
 /*
     grid
+
+    inline-block grid as covered in the inlin-block
+    section.
 */
 .o-grid {
     list-style: none;
@@ -14,22 +17,14 @@
     padding-left: 0.5em;
 }
 /* variations */
-.o-grid--flush {
-    margin-left: 0;
-}
-.o-grid--flush .o-grid__item {
-    padding-left: 0;
-}
+.o-grid--flush { margin-left: 0; }
+.o-grid--flush .o-grid__item { padding-left: 0; }
 .o-grid--flex {
     display: flex;
     flex-flow: wrap;
 }
-.o-grid--flex .o-grid__item {
-    display: flex;
-}
-.o-grid--flex .o-grid__item > * {
-    flex-grow: 1;
-}
+.o-grid--flex .o-grid__item { display: flex; }
+.o-grid--flex .o-grid__item > * { flex-grow: 1; }
 
 
 
@@ -62,6 +57,7 @@
 }
 
 
+
 /*
     Centrally align content
 */
@@ -79,17 +75,10 @@
     background: white;
     display: inline-block;
 }
-
 .v-text--flex {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-
-
-.wall img {
-    display: inline-block;
 }
 
 

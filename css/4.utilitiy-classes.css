@@ -50,3 +50,5 @@
 .u-clearfix:after {
     clear: both;
 }
+
+.u-inline-block { display: inline-block !important; }
