@@ -44,6 +44,7 @@
     .o-grid-product {
         display: grid;
         grid-template-columns: 50% 0.5em 50%;
+        grid-template-rows: auto;
     }
 }
 @media (min-width: 800px) {
