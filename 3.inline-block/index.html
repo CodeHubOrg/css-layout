@@ -24,17 +24,13 @@
             <section>
                 <h2>inline-block</h2>
 
-                <p>Full support for inline-block came in with Firefox version 3 in 2008 and Internet explorer version 8 in 2009.</p>
-
-                <p><code>inline-block</code> was not intended page layout but can be used with some workarounds.</p>
+                <p>Full support for inline-block came in with Firefox version 3 in 2008 and Internet explorer version 8 in 2009. <code>inline-block</code> was not intended page layout but can be used with some workarounds.</p>
 
                 <h3>Pros</h3>
                 <p>A big advantage <code>inline-block</code> has over <code>float</code> based layouts is not having to clear floats. This makes it much easier to work with on responsive layouts.</p>
 
                 <h3>Cons</h3>
-                <p>The big drawback is whitespace matters and has to be collapsed.</p>
-
-                <p><a href="https://css-tricks.com/fighting-the-space-between-inline-block-elements/">This article</a> explains the many ways web developers have been fighting this whitespace.</p>
+                <p>The big drawback is whitespace matters and has to be collapsed. <a href="https://css-tricks.com/fighting-the-space-between-inline-block-elements/">This article</a> explains the many ways web developers have been fighting this whitespace.</p>
 
                 <p>The way I highly recommend is using <code>HTML</code> comments.</p>
 
@@ -46,9 +42,9 @@
 &lt;/ul&gt;
                 </pre>
 
-                <p>It looks a little strange at first but it's a bullet proof way to remove the whitespace and still preserver code indentation. Other methods listed in the article that negative margins or setting the font-space to 0 have edge case issues.</p>
+                <p>It looks a little strange at first but it's a bullet proof way to remove the whitespace and still preserve code indentation. Other methods listed in the article that use negative margins or setting the font-space to 0 have edge case issues.</p>
 
-                <p>I actually prefer to deal with the whitespace issue over having to deal with clearing when using a <code>float</code> based layout.</p>
+                <p>I actually prefer to deal with the whitespace issue over having to deal with clearing floats when using a <code>float</code> based layout.</p>
             </section>
 
         </main>
