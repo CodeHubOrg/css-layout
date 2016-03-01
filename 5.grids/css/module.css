@@ -80,23 +80,3 @@
     grid-column: 3 / span 1;
     grid-row: 3 / span 3;
 }
-/*
-*/
-
-/* cosmetic styling */
-.multi-dime header,
-.multi-dime nav,
-.multi-dime aside,
-.multi-dime article { background: white; border: 10px solid black;
-                      padding: 20px; }
-.multi-dime aside { background: purple; }
-.multi-dime article { background: green; }
-.multi-dime header { background: orange; font-size: 1.5em; }
-.multi-dime nav { padding: 10px; background: white; }
-.multi-dime nav ul { list-style: none; margin: 0; padding: 0; }
-.multi-dime nav li:last-child { margin-bottom: 0; }
-.multi-dime nav a { display: block; color: white;
-                    background: grey; padding: 0.5em;
-                    text-decoration: none; }
-.multi-dime nav a:hover,
-.multi-dime nav a:focus { background: #ccc; color: black; }

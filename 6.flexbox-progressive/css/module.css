@@ -85,7 +85,6 @@
 /*
     Multidimensional layout
 */
-/* structual */
 .multi-dime {
     margin-left: -0.5em;
 }
@@ -102,28 +101,9 @@
     display: flex;
     flex-direction: column;
 }
-.multi-dime--flex header { flex-grow: 0; }
-.multi-dime--flex article { flex-grow: 1; }
-.multi-dime header,
-.multi-dime nav,
-.multi-dime aside,
-.multi-dime article {
-    background: white;
-    border: 10px solid black;
-    margin-bottom: 10px;
-    padding: 20px;
+.multi-dime--flex header {
+    flex-grow: 0;
 }
-/* cosmetic styling */
-.multi-dime nav { padding: 10px; }
-.multi-dime header { background: orange; font-size: 1.5em; }
-.multi-dime nav { background: white; }
-.multi-dime nav ul { list-style: none; margin: 0;
-                     padding: 0; }
-.multi-dime nav li:last-child { margin-bottom: 0; }
-.multi-dime nav a { display: block; color: white;
-                    background: grey; padding: 0.5em;
-                    text-decoration: none; }
-.multi-dime nav a:hover,
-.multi-dime nav a:focus { background: #ccc; color: black; }
-.multi-dime aside { background: purple; }
-.multi-dime article { background: green; }
+.multi-dime--flex article {
+    flex-grow: 1;
+}
