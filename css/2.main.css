@@ -61,19 +61,51 @@ section:after,
     margin-bottom: 1em;
 }
 
-/* credits */
-.c-credits {
+/* notice */
+.c-notice {
     font-size: 0.9em;
     border: 1px solid #ccc;
     padding: 1em;
     margin-bottom: 1.5em;
     background-color: #efefef;
 }
-.c-credits p:last-child {
+.c-notice p:last-child {
     margin: 0;
 }
-.c-credits--head {
+.c-notice--info {
+    background: #e6d7f9;
 }
+.c-notice--help {
+    background: #eaf48b;
+}
+
+
+
+/*
+    grid
+
+    inline-block grid as covered in the inlin-block
+    section.
+*/
+.o-g-grid {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0 -0.5em;
+    display: flex;
+    flex-flow: wrap;
+}
+.o-g-grid__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    padding-left: 0.5em;
+    display: flex;
+}
+.o-g-grid__item > * {
+    flex-grow: 1;
+}
+
+
 
 
 /* footer */
